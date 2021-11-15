@@ -16,15 +16,19 @@
   <style>
     .attribution { font-size: 11px; text-align: center; }
     .attribution a { color: hsl(228, 45%, 44%); }
-    body{
+
+
+    @media only screen and (min-width:700px){
+      body{
       font-family: 'Josefin Sans', sans-serif;
       background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='830' height='800'%3E%3Cdefs%3E%3ClinearGradient id='a' x1='95.861%25' x2='10.913%25' y1='2.476%25' y2='101.718%25'%3E%3Cstop offset='0%25' stop-color='%23FFF1F1'/%3E%3Cstop offset='100%25' stop-color='%23FFF'/%3E%3C/linearGradient%3E%3ClinearGradient id='b' x1='95.937%25' x2='10.848%25' y1='2.476%25' y2='101.718%25'%3E%3Cstop offset='0%25' stop-color='%23FFF1F1'/%3E%3Cstop offset='100%25' stop-color='%23FFF'/%3E%3C/linearGradient%3E%3C/defs%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cpath fill='url(%23a)' d='M0 800c48.557-184.991 167.048-301.57 355.473-349.737C543.898 402.096 688.074 252.008 788 0v800H0z' transform='rotate(180 394 400)'/%3E%3Cpath fill='url(%23b)' d='M413 800c25.696-97.814 88.4-159.455 188.112-184.924C700.824 589.608 777.12 510.25 830 377v423H413z'/%3E%3C/g%3E%3C/svg%3E");
       background-repeat: repeat;
       background-size: 100%;
-      height:900px;
+      height:auto;
       font-size: 16px;
       padding: 0;
       margin: 0;
+    }
     }
     #container{
       width: 1440px;
@@ -150,7 +154,7 @@
       left: 380px;
       box-shadow: 8px 15px 10px 0px #f4dddd;
       cursor: pointer;
-      transition: 1s ease-in-out;
+      transition: .5s ease-in-out;
 }
     #submit_button:hover{
       box-shadow: 12px 20px 20px 0px #d1bbbb;
@@ -201,13 +205,14 @@
   <div id="container">
     <div class="left-sec">
       <nav><img src="images/logo.svg" alt="logo image"></nav>
+      <div class="hero-girl"><img src="images/hero-mobile.jpg" alt="Hero Girl"></div>
     <span class="first">We're</span> <span class="second">coming</span> <span class="third">soon</span>
     <p>Hello fellow shoppers! We're currently building our new <br>
       fashion store.
       Add your email below to stay up-to-date with <br> announcements and our launch deals.</p>
       <div class="input-part">
         <form action="#" novalidate>
-        <input  id="main-input"  type="email" placeholder="Email Address" autofocus="" value="">
+        <input  id="main-input"  type="email" placeholder="Email Address">
         <span class="err-animation" id="err" ></span>
         <button type="submit" id="submit_button"  onclick="ValidateEmail(document.getElementById('main-input'))"></button>
         <span class="invalid_message invalid" id="err-message">
@@ -232,6 +237,6 @@
     </p>
     <div></div>
   </footer>
-  <script src="app.js"></script>
+  <!-- <script src="app.js"></script> -->
 </body>
 </html>
