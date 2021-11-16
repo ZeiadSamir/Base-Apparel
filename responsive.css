@@ -100,7 +100,7 @@
     position: relative;
     width: 200px;
     height: 100%;
-    left: 120px;
+    margin: auto;
   }
   .error-icon {
     position: absolute;
