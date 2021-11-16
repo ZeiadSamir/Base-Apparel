@@ -34,7 +34,7 @@
   .left-sec .first {
     display: block;
     font-size: 45px;
-    margin-top: 80px;
+    margin-top: 50px;
     color: hsl(0, 36%, 70%);
     letter-spacing: 15px;
     text-transform: uppercase;
@@ -100,7 +100,7 @@
     position: relative;
     width: 200px;
     height: 100%;
-    margin: auto;
+    left: 120px;
   }
   .error-icon {
     position: absolute;
@@ -180,10 +180,20 @@
     font-weight: 400;
     width: 100px;
   }
+  .valid_message{
+    width: 100px;
+  }
   .checked-icon {
     position: absolute;
     margin-left: 260px;
     margin-top: -22px;
+  }
+  .checked-icon svg {
+    margin-left: 20px;
+  }
+  .coder{
+    font-family: 'Italianno', cursive;
+    font-size: 16px;
   }
   .valid {
     display: none;
@@ -191,6 +201,7 @@
   .attribution {
     font-size: 6px;
     text-align: center;
+    margin-top: 75px;
     }
  .attribution a {
    color: hsl(228, 45%, 44%);
