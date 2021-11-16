@@ -5,7 +5,7 @@
     height: 100%;
     margin: 0;
     padding: 0;
-    width: 450px;
+    width: 100%;
   }
   .right-sec {
     display: none;
@@ -22,10 +22,10 @@
     height: 20px;
   }
   .hero-girl {
-    width: 450px;
+    width: 100%;
   }
   .hero-girl img {
-    width: 450px;
+    width: 100%;
     background-size: cover;
   }
   .left-sec {
