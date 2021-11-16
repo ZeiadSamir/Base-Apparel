@@ -28,7 +28,8 @@
       font-size: 16px;
       padding: 0;
       margin: 0;
-    }#container{
+    }
+    #container{
       width: 1440px;
       margin: auto;
       display: flex;
@@ -152,6 +153,7 @@
       box-shadow: 8px 15px 10px 0px #f4dddd;
       cursor: pointer;
       transition: .5s ease-in-out;
+      overflow: hidden;
 }
     #submit_button:hover{
       box-shadow: 12px 20px 20px 0px #d1bbbb;
@@ -198,6 +200,9 @@
       display: none;
     }
     }
+    body{
+      overflow-y: scroll;
+    }
 
 
   </style>
@@ -213,10 +218,10 @@
       fashion store.
       Add your email below to stay up-to-date with <br> announcements and our launch deals.</p>
       <div class="input-part">
-        <form action="#" novalidate>
+        <form action="javascript:void();" novalidate>
         <input  id="main-input"  type="email" placeholder="Email Address">
         <span class="err-animation" id="err" ></span>
-        <button type="submit" id="submit_button"  onclick="ValidateEmail(document.getElementById('main-input'))"></button>
+        <button type="submit" id="submit_button" onclick="ValidateEmail(document.getElementById('main-input'))"></button>
         <span class="invalid_message invalid" id="err-message">
           <p>Please provide a valid email</p>
         </span>
@@ -235,7 +240,7 @@
   <footer>
     <p class="attribution">
       Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
-      Coded by <a href="#">Your Name Here</a>.
+      Coded by <a href="javascript:void();">Your Name Here</a>.
     </p>
     <div></div>
   </footer>
