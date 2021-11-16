@@ -100,7 +100,8 @@
     position: relative;
     width: 200px;
     height: 100%;
-    margin: auto;
+    margin-left: 20%;
+
   }
   .error-icon {
     position: absolute;
@@ -242,4 +243,5 @@
       80% {opacity:1;}
       100% {opacity:0;width:355px;}
   }
+
 }
