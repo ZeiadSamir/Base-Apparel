@@ -12,6 +12,7 @@ if(input.value.match(validEmail)){
     errIcon.classList.remove('error-icon');
     errMessage.classList.add('invalid');
     validMessage.classList.remove('valid');
+    validMessage.classList.add('sliding-animation');
     autoRefresh();
     return true;
 }else if (input.value !== " ") {
@@ -40,5 +41,5 @@ function shaking(){
 function autoRefresh(){
     window.setTimeout(function () {
         window.location.reload();
-    }, 5000);
+    }, 7000);
 }
