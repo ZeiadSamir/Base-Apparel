@@ -29,9 +29,7 @@ if(input.value.match(validEmail)){
     return false;
 }
 }
-
-
-// reset the transition by...
+// reset the transition 
 
 function shaking(){
     errIcon.classList.remove("err-animation");
